@@ -1,0 +1,41 @@
+{
+  "name": "umzug-dynamodb-storage",
+  "version": "1.0.0",
+  "description": "A storage backend for migrating dynamoDB tables with umzug",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover --print detail _mocha test -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Floby/node-umzug-dynamodb-storage.git"
+  },
+  "keywords": [
+    "umzug",
+    "dynamoDB",
+    "AWS",
+    "migration",
+    "schema",
+    "migrate"
+  ],
+  "author": "Florent Jaby <florent.jaby@octo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Floby/node-umzug-dynamodb-storage/issues"
+  },
+  "homepage": "https://github.com/Floby/node-umzug-dynamodb-storage#readme",
+  "devDependencies": {
+    "aws-sdk": "^2.205.0",
+    "chai": "^4.1.2",
+    "dynalite": "^1.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.1",
+    "pify": "^3.0.0"
+  },
+  "dependencies": {
+    "delay": "^2.0.0",
+    "dynogels": "^9.0.0",
+    "dynogels-promisified": "^1.0.4",
+    "joi": "^13.1.2"
+  }
+}
