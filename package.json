@@ -1,6 +1,6 @@
 {
   "name": "umzug-dynamodb-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A storage backend for migrating dynamoDB tables with umzug",
   "main": "index.js",
   "scripts": {
