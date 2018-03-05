@@ -3,7 +3,6 @@ const DynamoDbStorage = require('../');
 const AWS = require('aws-sdk');
 const pify = require('pify');
 const { expect } = require('chai')
-const Path = require('path');
 
 describe('new DynamoDbStorage({ dynamodb, table })', function () {
   this.timeout(5000)
