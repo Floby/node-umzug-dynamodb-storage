@@ -5,7 +5,7 @@ const pify = require('pify');
 const { expect } = require('chai')
 
 describe('new DynamoDbStorage({ dynamodb, table })', function () {
-  this.timeout(5000)
+  this.timeout(20000)
   const migrationName = '0125678-some-migration.js';
   const tableName = 'some-migrations';
   let dynamoDbStorage;
