@@ -3,7 +3,7 @@ const delay = require('delay');
 
 module.exports = DynamoDbStorage;
 
-function DynamoDbStorage({ dynamodb, table = 'umzug-migrations' }) {
+function DynamoDbStorage({ dynamodb, table = 'migrations' }) {
   const dynogels = require('dynogels-promisified');
   dynogels.dynamoDriver(dynamodb);
 
