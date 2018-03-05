@@ -6,7 +6,7 @@ const { expect } = require('chai')
 const Path = require('path');
 
 describe('new DynamoDbStorage({ dynamodb, table })', function () {
-  //this.timeout(20000)
+  this.timeout(5000)
   const migrationName = '0125678-some-migration.js';
   const tableName = 'some-migrations';
   let dynamoDbStorage;
