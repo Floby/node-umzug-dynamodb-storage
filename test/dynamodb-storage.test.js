@@ -103,6 +103,8 @@ function withDynalite(createTableMs = 10) {
   });
 
   const dynamodb = new AWS.DynamoDB({
+    accessKeyId: 'hello',
+    secretAccessKey: 'world',
     endpoint: 'http://localhost:' + portNumber,
     region: 'eu-west-1'
   });
