@@ -8,6 +8,7 @@ function DynamoDbStorage({ dynamodb, table = 'migrations' }) {
   dynogels.dynamoDriver(dynamodb);
 
   const Migrations = dynogels.define(table, {
+    tableName: table,
     hashKey: 'name',
     timestamps: true,
     schema: {
